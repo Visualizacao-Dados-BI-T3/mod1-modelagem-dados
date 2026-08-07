@@ -1,0 +1,4 @@
+# Databases e arquivos de dados pesados
+semana_06_limpeza_e_transformacao/databases/
+.ipynb_checkpoints/
+__pycache__/
