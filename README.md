@@ -33,10 +33,23 @@ O conteúdo está organizado cronologicamente pelas semanas do curso:
 - Filtros, seleções e leitura de dados de múltiplas fontes.
 - Operações de agrupamento e combinação de dados (`groupby`, `merge`, `pivot`).
 
+### [📁 Semana 06: Limpeza e Transformação de Dados](./semana_06_limpeza_e_transformacao)
+- **Limpeza de Dados (`teoria_limpeza_de_dados.ipynb` e `atividade_limpeza_de_dados.ipynb`):**
+  - Diagnóstico de qualidade de dados (tipos de dados, contagens de não-nulos, estatísticas descritivas e cardinalidade).
+  - Tratamento de dados ausentes (`dropna`, imputação estatística simples com média/mediana/moda, imputação por grupo e em séries temporais).
+  - Remoção de duplicatas (duplicatas exatas, duplicatas lógicas por chave de negócio e *fuzzy matching*).
+  - Detecção e tratamento de outliers (análise visual com Boxplot e Scatter plot, limites IQR, Z-Score e Winsorização).
+  - Padronização de formatos/categorias e normalização estatística (Min-Max Scaling, Z-Score manual/PyNative/Scikit-Learn).
+- **Transformação de Dados (`teoria_transformacao_de_dados.ipynb` e `atividade_transformacao_de_dados.pdf`):**
+  - Aplicação de funções em colunas e DataFrames (`.map()`, `.apply()`, `.applymap()` / `DataFrame.map()`).
+  - Transformações condicionais e binning (`np.where()`, `np.select()`, `pd.cut()` para intervalos fixos e `pd.qcut()` para quantis).
+  - Junção e concatenação de tabelas (`pd.concat()`, `pd.merge()` com *inner/left/right/outer* e `.join()` por índice).
+  - Atividade prática de aplicação com dados reais do e-commerce Olist.
+
 ## 🛠️ Tecnologias Utilizadas
 - **Linguagem:** Python 3
 - **Ambientes:** Google Colab, VS Code
-- **Bibliotecas principais:** Pandas, NumPy, re, datetime
+- **Bibliotecas principais:** Pandas, NumPy, Matplotlib, Seaborn, SciPy, Scikit-Learn, re, datetime
 - **Versionamento:** Git e GitHub
 
 ---
