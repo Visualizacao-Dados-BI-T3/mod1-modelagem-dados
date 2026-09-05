@@ -105,6 +105,29 @@ SELECT avg(duracao_segundos), genero from musicas GROUP BY genero HAVING avg(dur
 
 
 -- Mostre os planos que possuem pelo menos dois usuários.
+SELECT plano, count(*) from usuarios group by plano HAVING count(*) >= 2 
 
 
 -- Mostre cada álbum e o nome do seu artista.
+select album.titulo, artista.nome from albuns album join artistas artista
+on artista.id_artista = album.id_artista
+
+
+-- Mostre cada música e o título do seu álbum.
+select a.titulo titulo_album, m.titulo titulo_musica from albuns a join musicas m
+on a.id_album = m.id_album
+
+
+-- Mostre cada reprodução com o nome do usuário.
+select * from reproducoes r join usuarios u
+on r.id_usuario = u.id_usuario
+
+
+-- Mostre o usuário, a música e a data de cada reprodução.
+SELECT 
+u.nome usuario, m.titulo musica, r.data_reproducao
+from reproducoes r
+join usuarios u
+on r.id_usuario =  u.id_usuario
+join musicas m 
+on r.id_musica = m.id_musica

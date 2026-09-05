@@ -1,0 +1,9 @@
+id_data,data,dia,mes,ano,trimestre,nome_mes,dia_semana
+20260105,2026-01-05,5,1,2026,1,Janeiro,Segunda
+20260112,2026-01-12,12,1,2026,1,Janeiro,Segunda
+20260120,2026-01-20,20,1,2026,1,Janeiro,Terça
+20260128,2026-01-28,28,1,2026,1,Janeiro,Quarta
+20260203,2026-02-03,3,2,2026,1,Fevereiro,Terça
+20260215,2026-02-15,15,2,2026,1,Fevereiro,Domingo
+20260310,2026-03-10,10,3,2026,1,Março,Terça
+20260322,2026-03-22,22,3,2026,1,Março,Domingo
